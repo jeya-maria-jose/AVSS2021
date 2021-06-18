@@ -1,29 +1,3 @@
-
-Skip to content
-
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-
-    @svishwa
-
-0
-0
-
-    0
-
-svishwa/ICB2019
-Code
-Issues 0
-Pull requests 0
-Projects 0
-Wiki
-Insights
-Settings
-ICB2019/pages/registration.html
-@svishwa svishwa Update registration.html 1cd33b9 7 minutes ago
-554 lines (457 sloc) 11.5 KB
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,10 +11,13 @@ ICB2019/pages/registration.html
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
  
   <style>
+
 /**/
 * {
     box-sizing: border-box;
 }
+
+
 body {
     margin: 0;
     font-family: 'Cabin', sans-serif;
@@ -54,6 +31,8 @@ body {
 	height:100%;
 	color: #000099 ;//595a5b;
 }
+
+
 #myCarousel {
     position: absolute;
 	top:0;
@@ -63,10 +42,13 @@ body {
 	width:100%;
 	z-index: 1;
 }
+
 .cimage{
     width: 100%;
     height: auto;
   }
+
+
 #myBtn {
     width: 20px;
     font-size: 12px;
@@ -76,11 +58,14 @@ body {
     color: #fff;
     cursor: pointer;
 }
+
 #myBtn:hover {
     background: #ddd;
     color: black;
 	    border: none;
+
 }
+
 /**/
 .navbar{
 background-color:transparent; //#f2f2f2; 
@@ -88,29 +73,39 @@ border-color:transparent;
 color: #f1f1f1 !important;//#595a5b !important;
 font-weight: bold;
 }
+
+
 .navbar-default .navbar-nav>li>a{
 color: #f1f1f1 !important ; //#595a5b !important;
 font-size:18px;
 font-weight: bold;
 }
+
 .navbar-default .navbar-brand {
 color: #f1f1f1 !important;//#595a5b !important;
 font-weight: bold;
 }
+
 .dropdown-menu{
 background-color:#f1f1f1;
 }
+
 .dropdown-menu > li > a{
 color: #000099 !important;
 }
+
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:focus, 
 .navbar-default .navbar-nav > .open > a:hover{
 background-color:#f1f1f1;
 color: #000099 !important;
 }
+
 /**/
+
+
 /**/
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .example {background: red;}
@@ -136,15 +131,18 @@ color: #000099 !important;
 	color:#f1f1f1 !important;
 	font-weight: bold;
 	}
+
 	#title>p{
 	font-size:14px;
 	color:#f1f1f1 !important;
+
 	}
 	
 	#confName{
 	display:none;
 	}
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .example {background: green;}
@@ -161,7 +159,7 @@ color: #000099 !important;
     left:25%;
     width:50%;
     color: #f1f1f1;
-    z-index: 1;
+    z-index: 1;	
 	background:rgba(0,0,0,.5);
 	
 }
@@ -170,11 +168,13 @@ color: #000099 !important;
 	color:#f1f1f1 !important;
 	font-weight: bold;
 	}
+
 	#title>p{
 	font-size:16px;
 	color:#f1f1f1 !important;
 	}
 }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .example {background: blue;}
@@ -191,7 +191,7 @@ color: #000099 !important;
     left:25%;
     width:50%;
     color: #f1f1f1;
-    z-index: 1;
+    z-index: 1;	
 	background:rgba(0,0,0,.5);
 	
 }
@@ -200,11 +200,13 @@ color: #000099 !important;
 	color:#f1f1f1 !important;
 	font-weight: bold;
 	}
+
 	#title>p{
 	font-size:18px;
 	color:#f1f1f1 !important;
 	}
 } 
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .example {background: orange;}
@@ -223,17 +225,21 @@ color: #000099 !important;
     color: #f1f1f1;
     z-index: 1;
 	background:rgba(0,0,0,.5);
+	
 }
+
 	#title>h1{
 	font-size:48px;
 	color:#f1f1f1 !important;
 	font-weight: bold;
 	}
+
 	#title>p{
 	font-size:22px;
 	color:#f1f1f1 !important;
 	}
 } 
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .example {background: pink;}
@@ -250,7 +256,7 @@ color: #000099 !important;
     left:25%;
     width:50%;
     color: #f1f1f1;
-    z-index: 1;	
+    z-index: 1;
 	background:rgba(0,0,0,.35);
 	
 }
@@ -259,26 +265,34 @@ color: #000099 !important;
 	color:#f1f1f1 !important;
 	font-weight: bold;
 	}
+
 	#title>p{
 	font-size:22px;
 	color:#f1f1f1 !important;
 	}
 }
+
+
 #intro-bg{
 //background-color: #d9d9d9;
 //background-color: #f2f2f2;
 //opacity: 0.8;
 color:#000099 ; //#595a5b;
 text-align:justify;
+
 }
+
+
 	.panel-transparent {
 			background: none;
 		}
+
 	.panel-transparent .panel-header{
 	    z-index: -1;
         background: none !important;
 		padding-top: 10px;
 		padding-bottoms: 10px;
+
     }
 	
     .panel-transparent .panel-body{
@@ -287,22 +301,28 @@ text-align:justify;
 		padding-top: 10px;
 		
     }
+
+
 	.panel-default {
 		border: none;
 		z-index: -1;
 	}
+
 .panel-header{
 padding-bottom:0px;
 padding-top:0px;
 }
+
 .panel-body{
 padding-bottom:0px;
 padding-top:0px;
 }
+
 .panel{
 	border-width:0;
     box-shadow:none;
 }
+
 .well{
 background-color: transparent;
 border:none;
@@ -311,57 +331,76 @@ padding-bottom:0px;
 border-width:0;
 box-shadow:none;
 }
+
+
 /**/
 h4{
 font-weight: bold;
 color:#000099;
+
 }
+
+
 #news
 {
 text-align:left;
 background-color: transparent; //#f2f2f2;
 opacity: 0.8;
 }
+
+
+
 #news li>h5{
 font-weight: bold;
 }
+
 #regOptions{
 text-align: left;
 width: 100%;
 background-color: #f2f2f2;
 opacity: 0.8;
 }
+
 #regOptions td:hover{
 background-color: red;
 }
+
 /*
 #regOptions tr:nth-child(odd){
 background-color: #f2f2f2;
 opacity: 0.8;
 }
+
 #regOptions tr:nth-child(even){
 background-color: #f2f2f2;
 opacity: 0.8;
 }
 */
+
 #regOptions td, #regOptions th {
     border: 1px solid #d9d9d9;
     padding: 8px;
 }
-#title1{
-font-weight: bold;
-text-align: left;
-color:#000099;//#595a5b;
-}
+
+
+
 #heading{
 font-weight: bold;
 text-align: center;
 color:#000099;//#595a5b;
 text-decoration: underline;
 }
+
+#divOrg{
+border: none;
+background-color: transparent;
+}
+
 /**/
 a {
+
     color: rgb(153, 0, 0);
+
 }
 </style>
 
@@ -379,11 +418,11 @@ a {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="../index.html"><img src="../images/logo_white_small.png" alt="logo" width="100" height="60"> </a>
+      <a class="navbar-brand" href="../index.html"><img src="../images/logo_white_small.png" alt="logo" width="98" height="58"> </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       
-      <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right">
 			<li><a href="../index.html">Home</a></li>
 			<li><a href="org.html">Organizers</a></li>
 			<li class="dropdown">
@@ -406,14 +445,14 @@ a {
           <li><a href="schedule.html">Schedule</a></li>
           <li><a href="speakers.html">Keynote Speakers</a></li>
           <li><a href="tutorial.html">Tutorials</a></li>
-          <li><a href="challenge.html">Challenges</a></li>
+          <li><a href="#">Challenges</a></li>
         </ul>
       </li>
 	  <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attend
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Registration</a></li>
+          <li><a href="registration.html">Registration</a></li>
           <li><a href="venue.html">Venue</a></li>
           <li><a href="accomodation.html">Accomodation</a></li>
           <li><a href="visainvite.html">Visa Invitation Letter</a></li>
@@ -468,61 +507,151 @@ a {
 						<p id="confName">The 17 <sup>th</sup>IEEE Int'l Conf on Advanced Video and Signal-based Surveillance</p>
 						<p>November 16-19, 2021 | Virtual </p>
 						<!--<button id="myBtn" onclick="myFunction()"><span class="glyphicon glyphicon-pause"></span></button>-->
-				</div>							
+				</div>										
+
+<div class="container" id="main-container">
+<div class="well" >
+<div class="panel panel-transparent  w3-container w3-center w3-animate-bottom">
+	<h4 id="title1">To be updated... </h4>
+		
+	    <div class="panel-header">
+
+		   <h4 id="title1">Challenges</h4>
+		</div>
+  		<div class="row" >
+				
+			<div class="col-sm-6">
+
+			    <div class="panel-body">
+					<h5><b><u> 1. Drone-vs-Bird Detection Challenge </u> </b></h5>
+					<h6><b> Angelo Coluccia, Alessio Fascista, Arne Schumann, Lars Sommer, Anastasios Dimou and Dimitrios Zarpalas</b></h6>
+					</br>
+					<div class="row" >
+						
+						<div class="col-sm-12">
+							<h5><b>Abstract </b></h5>
+							<p align="justify"> The challenge aims at attracting research efforts to identify novel solutions to the problem outlined above, i.e., discrimination between birds and drones at far distance, by providing a video dataset that may be difficult to obtain (drone flying require special conditions and permissions, and shore areas are needed for the considered problem). The challenge goal is to detect a drone appearing at some time in a short video sequence where birds are also present: the algorithm should raise an alarm and provide a position estimate only when a drone is present, while not issuing alarms on birds. The dataset is continually increased over consecutive installments of the challenge and made available to the community afterwards.
+							</p>
+							 
+							<p><a href="https://wosdetc2021.wordpress.com/drone-vs-bird-detection-challenge/" target="_blank">Challenge Website</a></p>
+						</div>
+					</div>	
+		        </div>
+		    <!-- </div>
+
+
+        
+  		<div class="col-sm-6">
+	    <div class="panel-body">
+			<h5><b><u> 2. New Trends in Convolutional Neural Networks for Biometric Applications</u> </b></h5>
+			<h6><b> Abhijit Das and Mohamed Hussein</b></h6>
+			</br>
+			<div class="row" >
+				
+				<div class="col-sm-12">
+					<h5><b>Abstract </b></h5>
+					<p align="justify"> Convolutional Neural Networks (CNNs) have garnered immense interest among the research
+						community in many disciplines, thanks to the numerous breakthroughs enabled by CNNs. Not surprisingly,
+						CNNs have also brought huge success for biometrics research. This success was further fueled by the
+						commercialization of biometric systems based on CNNs. One of the main advantages of CNNs is alleviating
+						the need to design hand-crafted or engineered features extractors, and rather combine representation
+						extraction and prediction in a single unified framework. This advantage has made them particularly
+						attractive for newly explored imaging modalities, such as thermal and depth data, for which traditional
+						feature extraction techniques, such as SIFT (scale invariant feature transform) or HoG (histogram of oriented
+						gradients) may not perform satisfactorily.
+						In this tutorial, we will focus on advances in CNNs that have been recently explored for biometric
+						applications, such as multi-task learning and attention mechanisms. We will also cover the challenges and
+						current solutions for training CNNs for newly explored unconventional imaging modalities. Hence, in this
+						tutorial, we aim to list and explain these emerging topics and trace a possible roadmap for future research
+						for biometric applications. We hope that this tutorial will help researchers to bring forces in these exciting
+						research areas.
+
+					</p>
+					
+					<h5><b>Outline </b></h5>
+					<ul id="List1" style="text-align:left;">
+												
+							<li>
+								An introduction to CNN.
+								
+							</li>
+							<li>
+								 A review of CNN for biometric application.
+								
+							</li>
+							<li>
+								 Multi-tasking based on convolutional neural network (CNN) for better robust for biometric application.
+								
+							</li>
+							<li>
+								 Attention mechanism based on CNN for better feature representation.
+								
+							</li>
+							<li>
+								 CNNs for Unconventional Imaging Modalities.
+								
+							</li>
+							<li>
+								 A brief recap of the related ongoing projects.
+								
+							</li>
+							
+						 </ul>
+
 				
 
-
-<div class="container">
-	
-	<div class="well" >
-		<h4 id="title1">To be updated... </h4>
-		<!--
-    	<h4 id="title1">Registration </h4>
-		<p style="text-align:left;">All accepted papers (main conference and competition) MUST have at least one registered author with a non-student registration no later than Monday, April 1, 2019, 11:59 PM Pacific Time (the early registration deadline). A student author can register at the student rate only if another co-author has registered at the full rate.  Each full conference registration can cover up to three papers. A student registration or a complimentary registration cannot cover a paper.</p>
-
-		<p style="text-align:left;">Click <a href="https://www.regonline.com/icb2019" target="_blank" >here </a> to register for the conference. </p>
-
-		<p style="text-align:left;"> The regisrtation fees are as follows:</p>
-
-				<table class="table table-striped">
-				    <thead>
-				      <tr>
-				      	<th></th>
-				        <th>Early registration (before April 1, 2019)</th>
-				        <th>Late registration (after April 1, 2019)</th>
-				      </tr>
-				    </thead>
-				    <tbody>
-				      <tr>
-				        <td>IEEE/IAPR Member</td>
-				        <td>$700</td>
-				        <td>$850</td>
-				      </tr>
-				      <tr>
-				        <td>Non Member</td>
-				        <td>$775</td>
-				        <td>$900</td>
-				      </tr>
-				      <tr>
-				        <td>IEEE/IAPR Student Member</td>
-				        <td>$500</td>
-				        <td>$600</td>
-				      </tr>
-				    </tbody>
-				</table>
-		
-		<p style="text-align:left;"><b>Refund policy</b>: All refund requests must be made via email to Nicole Finn (nicole@ctocevents.com). All cancellations will be subject to a $65 cancellation fee before May 1, 2019, 11:59pm EST.  NO REFUNDS will be made after May 1, 2019. You are allowed to change the name on the registration without penalty.</p>
-
-		<p style="text-align:left;">You are allowed to change the name on the registration without penalty. </p>
-
+					</br>
+					<h5><b>Biography</b></h5>
+					<h6>Dr. Abhijit Das</h6>
 				 
-	</div>
+					<p>Researcher, Inria, France</p>
+					<p align="justify"> He is currently working as a Researcher at Inria Sophia Antipolis–
+						Méditerranée, France. Since 10 years he is conducting research on a range of topics of machine learning
+						and computer vision. His current investigation focuses on learning techniques based on Convolution Neural
+						Network applied to human health monitoring, biometrics and face analysis employing facial and corporeal-
+						based visual feature. During his research career, he has published several scientific articles in conferences,
+						journals and a book chapter and has also received several awards from the IEEE, and other scientific
+						organizations. Dr. Das is involved in organizing scientific events such as international conferences,
+						workshop, competitions and special sessions at conferences, and has served as guest editor for special issues,
+						technical program committee member for several reputed international conference and reviewer of top-
+						ranking journals.</p>
 
-		
+					</br>
+					<h6>Dr. Mohamed Hussein</h6>
+				 
+					<p>Computer Scientist, ISI, USC, USA.</p>
+					<p align="justify"> Dr. Hussein is a Computer Scientist at the Information Sciences
+						Institute (ISI). Prior to joining ISI, he spent three years as an assistant professor at Egypt-Japan University
+						of Science and Technology in Egypt (E-JUST), after three other years at Alexandria University in Egypt.
+						Prior to that, Dr. Hussein spent about two years as an Adjunct Member Research Staff at Mitsubishi Electric
+						Research Labs, in Cambridge, MA, USA, after receiving his PhD degree in Computer Science from the
+						University of Maryland at College Park, MD, USA in 2009. Dr. Hussein served on the supervision and
+						examination committees of several PhD students, and has been the PI/Co-PI on multiple industry and
+						government funded research projects on Sign Language Recognition and Crowd Scene Analysis, and
+						Biometrics Anti-Spoofing. Dr. Hussein has over 30 published papers, and three issued patents.</p>
+
+					</br>
+					
+					 
+				</div>
+			</div>	
+        </div>
+
+
+
+    </div>
+	</div>
+    </div>
+</br>
+        
+
 </div>
+
+
+</div>
+
+
+
 
 </body>
 </html>
-
-
-
